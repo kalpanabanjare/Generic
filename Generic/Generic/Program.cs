@@ -5,13 +5,16 @@ namespace Generic
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Find maximum");
-            int intOutput = MaxNumCheck.MaximunIntegerNumber(22, 66, 99);
-            Console.WriteLine(intOutput);
-            double floatOutput = MaxNumCheck.MaximunFloatNumber(229.78, 112.96, 96.9);
-            Console.WriteLine(floatOutput);
-            string stringOutput = MaxNumCheck.MaximunString("Mango", "Pineapple", "Banama");
-            Console.WriteLine(stringOutput);
+                Console.WriteLine("Welcome in Generic Method");
+                Console.WriteLine("to find max");
+                MaxGeneric<int> generInt = new MaxGeneric<int>();
+                generInt.Maximum(27, 88, 45);
+
+                MaxGeneric<float> genericFloat = new MaxGeneric<float>();
+                genericFloat.Maximum(66.2f, 55.5f, 34.8f);
+
+                MaxGeneric<string> genericString = new MaxGeneric<string>();
+                genericString.Maximum("Apple", "Peach", "Banana");
         }
     } 
 }    

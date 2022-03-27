@@ -6,32 +6,31 @@ using System.Threading.Tasks;
 
 namespace Generic
 {
-    public class GenericMax<T> where T : ICloneable
+    public class MaxGeneric<T> where T : IComparable
     {
-        public T[] value;
-        public GenericMax(T[] value)
+        public T Maximum(T valueOne, T valueTwo, T valueThree)
         {
-            this.value = value;
-        }
-        public T[] Sort(T[] values)
-        {
-            Array.Sort(values);
-            return values;
-        }
-        public T MaxValue(params T[] values)
-        {
-            var sorted_values = Sort(values);
-            return sorted_values[^1];
-        }
-        public T MaxMethod()
-        {
-            var max = MaxValue(this.value);
-            return max;
-        }
-        public void PrintMaxValue()
-        {
-            var max = MaxValue(this.value);
-            Console.WriteLine("Maximum Value is" + max);
+            T maxValue = valueOne;
+            if (valueOne.CompareTo(valueTwo) > 0 && valueOne.CompareTo(valueThree) > 0)
+            {
+                maxValue = valueOne;
+                Console.WriteLine("Maximum  Value is: " + maxValue);
+            }
+            else if (valueTwo.CompareTo(valueOne) > 0 && valueTwo.CompareTo(valueThree) > 0)
+            {
+                maxValue = valueTwo;
+                Console.WriteLine("Maximum Value is: " + maxValue);
+            }
+            else if (valueThree.CompareTo(valueOne) > 0 && valueThree.CompareTo(valueTwo) > 0)
+            {
+                maxValue = valueThree;
+                Console.WriteLine("Maximum Value is: " + maxValue);
+            }
+            else
+            {
+                Console.WriteLine("All value are same");
+            }
+            return maxValue;
         }
     }
 }
