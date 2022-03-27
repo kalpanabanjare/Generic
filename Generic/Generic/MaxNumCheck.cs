@@ -24,7 +24,7 @@ namespace Generic
             }
             throw new Exception("firstNumber,secondNumberand and secondNumber are equal.");
         }
-        public static double MaximunFloatNumber(double firstNumber, double secondNumber, double thirdNumber)
+        public static float MaximunFloatNumber(float firstNumber, float secondNumber, float thirdNumber)
         {
             Console.WriteLine("Maximum Number for float value");
             if (firstNumber.CompareTo(secondNumber) > 0 && firstNumber.CompareTo(thirdNumber) > 0)
