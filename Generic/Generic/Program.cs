@@ -5,16 +5,17 @@ namespace Generic
     {
         public static void Main(string[] args)
         {
-                Console.WriteLine("Welcome in Generic Method");
-                Console.WriteLine("to find max");
-                MaxGeneric<int> generInt = new MaxGeneric<int>();
-                generInt.Maximum(34, 89, 76);
+            Console.WriteLine("Welcome in Generic Method");
+            Console.WriteLine("To find maximum value");
+            MaxGeneric<int> maxGenericInt = new MaxGeneric<int>(33, 66, 99);
+            maxGenericInt.Maximum();
 
-                MaxGeneric<float> genericFloat = new MaxGeneric<float>();
-                genericFloat.Maximum(69.2f, 85.5f, 93.8f);
+            MaxGeneric<float> maxGenericFloat = new MaxGeneric<float>(98.7f, 33.33f, 56.87f);
+            maxGenericFloat.Maximum();
 
-                MaxGeneric<string> genericString = new MaxGeneric<string>();
-                genericString.Maximum("pineapple", "Peach", "Banana");
+            MaxGeneric<string> maxGenericString = new MaxGeneric<string>("PineApple", "Peach", "Banana");
+            maxGenericString.Maximum();
         }
-    } 
-}    
+    }
+}
+            
