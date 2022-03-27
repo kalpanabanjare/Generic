@@ -14,7 +14,7 @@ namespace Generic
             if (valueOne.CompareTo(valueTwo) > 0 && valueOne.CompareTo(valueThree) > 0)
             {
                 maxValue = valueOne;
-                Console.WriteLine("Maximum  Value is: " + maxValue);
+                Console.WriteLine("Maximum Value is: " + maxValue);
             }
             else if (valueTwo.CompareTo(valueOne) > 0 && valueTwo.CompareTo(valueThree) > 0)
             {

@@ -8,13 +8,13 @@ namespace Generic
                 Console.WriteLine("Welcome in Generic Method");
                 Console.WriteLine("to find max");
                 MaxGeneric<int> generInt = new MaxGeneric<int>();
-                generInt.Maximum(27, 88, 45);
+                generInt.Maximum(34, 89, 76);
 
                 MaxGeneric<float> genericFloat = new MaxGeneric<float>();
-                genericFloat.Maximum(66.2f, 55.5f, 34.8f);
+                genericFloat.Maximum(69.2f, 85.5f, 93.8f);
 
                 MaxGeneric<string> genericString = new MaxGeneric<string>();
-                genericString.Maximum("Apple", "Peach", "Banana");
+                genericString.Maximum("pineapple", "Peach", "Banana");
         }
     } 
 }    
