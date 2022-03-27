@@ -6,8 +6,10 @@ namespace Generic
         public static void Main(string[] args)
         {
             Console.WriteLine("Find maximum");
-            int output = MaxNumCheck.MaximunIntegerNumber(22, 66, 99);
-            Console.WriteLine(output);            
+            int intOutput = MaxNumCheck.MaximunIntegerNumber(22, 66, 99);
+            Console.WriteLine(intOutput);
+            double floatOutput = MaxNumCheck.MaximunFloatNumber(229.78, 112.96, 96.9);
+            Console.WriteLine(floatOutput);
         }
     } 
 }    
