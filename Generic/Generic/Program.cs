@@ -10,6 +10,8 @@ namespace Generic
             Console.WriteLine(intOutput);
             double floatOutput = MaxNumCheck.MaximunFloatNumber(229.78, 112.96, 96.9);
             Console.WriteLine(floatOutput);
+            string stringOutput = MaxNumCheck.MaximunString("Mango", "Pineapple", "Banama");
+            Console.WriteLine(stringOutput);
         }
     } 
 }    
